@@ -17,5 +17,10 @@ public class FeignController {
     public String hello(@PathVariable("param") String param){
         return feignService.hello(param);
     }
+
+    @GetMapping("/hello/world")
+    String helloworld() {
+        return feignService.helloworld();
+    }
 }
 

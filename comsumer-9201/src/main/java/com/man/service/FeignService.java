@@ -9,10 +9,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.xml.ws.ServiceMode;
 
-@FeignClient(value = "provider-9001", fallbackFactory = FeignFallBackComponent.class)
+@FeignClient(value = "provider", fallbackFactory = FeignFallBackComponent.class)
 @Component
 public interface FeignService {
 
     @GetMapping("/hello/{param}")
     String hello(@PathVariable("param") String param);
+
+    @GetMapping("/hello/world")
+    String helloworld();
 }

@@ -12,6 +12,9 @@
         <module>provider-9001</module>
         <module>eureka-server-9101</module>
         <module>comsumer-9201</module>
+        <module>eureka-server-9102</module>
+        <module>eureka-server-9103</module>
+        <module>provider-9002</module>
     </modules>
 
     <properties>

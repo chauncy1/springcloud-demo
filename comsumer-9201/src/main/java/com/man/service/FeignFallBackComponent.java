@@ -10,6 +10,10 @@ public class FeignFallBackComponent implements FallbackFactory {
             public String hello(String param) {
                 return "this is hello fall back factory";
             }
+
+            public String helloworld() {
+                return "this is helloworld fall back factory";
+            }
         };
     }
 }

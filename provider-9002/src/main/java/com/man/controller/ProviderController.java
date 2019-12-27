@@ -2,7 +2,6 @@ package com.man.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -15,6 +14,6 @@ public class ProviderController {
 
     @GetMapping("/hello/world")
     public String helloworld() {
-        return "provider-9001";
+        return "provider-9002";
     }
 }

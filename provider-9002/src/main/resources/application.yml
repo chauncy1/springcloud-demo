@@ -1,5 +1,5 @@
 server:
-  port: 9001
+  port: 9002
 
 spring:
   application:
@@ -10,4 +10,4 @@ eureka:
     serviceUrl:
       defaultZone: http://www.man9101:9101/eureka, http://www.man9102:9102/eureka, http://www.man9103:9103/eureka
   instance:
-    instance-id: provider-9001 # 修改eureka界面的默认描述信息
+    instance-id: provider-9002 # 修改eureka界面的默认描述信息
