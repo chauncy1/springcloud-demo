@@ -11,10 +11,11 @@
     <modules>
         <module>provider-9001</module>
         <module>eureka-server-9101</module>
-        <module>comsumer-9201</module>
+        <module>consumer-9201</module>
         <module>eureka-server-9102</module>
         <module>eureka-server-9103</module>
         <module>provider-9002</module>
+        <module>gitconfig-server-9301</module>
     </modules>
 
     <properties>

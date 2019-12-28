@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: eureka-server
+      profile: 9102
+      uri: http://localhost:9301/
+      label: master

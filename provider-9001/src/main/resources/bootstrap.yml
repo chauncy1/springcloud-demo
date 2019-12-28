@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: provider
+      profile: 9001
+      uri: http://localhost:9301/
+      label: master

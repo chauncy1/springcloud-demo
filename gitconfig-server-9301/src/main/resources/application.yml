@@ -1,0 +1,18 @@
+server:
+  port: 9301
+
+spring:
+  application:
+    name: gitconfig-server
+  #连接远程仓库
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/chauncy1/springcloud-demo.git   # http://localhost:9301/application-{profile}.yml 可以访问配置文件信息
+          search-paths: config-repo     #  # git仓库地址下的相对地址，可以配置多个，用,分割
+#  /{application}/{profile}[/{label}]
+#  /{application}-{profile}.yml
+#  /{label}/{application}-{profile}.yml
+#  /{application}-{profile}.properties
+#  /{label}/{application}-{profile}.properties
