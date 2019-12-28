@@ -1,0 +1,17 @@
+server:
+  port: 9101
+
+# eureka 服务端配置
+# 测试的时候集群需要保证hostname不相同，不能都用localhost
+eureka:
+  client:
+    register-with-eureka: false # 表示是否向eureka注册自己
+    fetch-registry: false # false表示自己为注册中心
+    service-url: # eureka监控页面
+      # 单机配置 defaultZone: http://${eureka.instance.hostname}:${server.port}
+      defaultZone: http://www.man9102:9102/eureka, http://www.man9103:9103/eureka  # 集群配置
+  instance:
+    hostname: www.man9101
+
+
+
